@@ -93,6 +93,11 @@ img{display:block}
 
 /* SPECS TABLE */
 .specs-section{background:var(--gray-50);border-top:1px solid var(--gray-200)}
+.specs-grid-wrap{position:relative}
+.specs-grid-blur{filter:blur(6px);user-select:none;pointer-events:none}
+.specs-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.55);border-radius:var(--r-lg)}
+.specs-overlay-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:20px 28px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.specs-overlay-text{font-size:13px;color:var(--gray-500);margin-bottom:14px}
 .specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--gray-200);border-radius:var(--r-lg);overflow:hidden;background:#fff}
 @media(max-width:600px){.specs-grid{grid-template-columns:1fr}}
 .spec-row{display:flex;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--gray-100);gap:16px}
@@ -219,11 +224,11 @@ img{display:block}
       </div>
       <div class="hero-spec-card" aria-label="Especificaciones principales">
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.40);margin-bottom:16px">Especificaciones clave</div>
-        <div class="hero-spec-row"><span class="hero-spec-label">Protocolo NFC</span><span class="hero-spec-val">ISO 14443 A/B · MIFARE · DESFire</span></div>
+        <div class="hero-spec-row"><span class="hero-spec-label">Procesador</span><span class="hero-spec-val">Con Módem 4G+ integrado</span></div>
+<div class="hero-spec-row"><span class="hero-spec-label">Unidad lectora</span><span class="hero-spec-val">RFID NFC, EMV y Scanner QR</span></div>
 <div class="hero-spec-row"><span class="hero-spec-label">Tiempo de respuesta</span><span class="hero-spec-val">< 200ms por transacción</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Conectividad</span><span class="hero-spec-val">GPRS / 4G LTE · WiFi 802.11 b/g/n</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Pantalla</span><span class="hero-spec-val">LCD 3.5" color 320×240 px</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Temperatura operativa</span><span class="hero-spec-val">-10°C a +55°C</span></div>
+<div class="hero-spec-row"><span class="hero-spec-label">Geolocalización</span><span class="hero-spec-val">GPS Glonass</span></div>
+<div class="hero-spec-row"><span class="hero-spec-label">Actualización</span><span class="hero-spec-val">DOTA (Download Over The Air)</span></div>
       </div>
     </div>
   </div>
@@ -250,23 +255,22 @@ img{display:block}
         <div class="section-label">Ficha técnica</div>
         <h2 id="specs-title" class="section-title">Especificaciones completas</h2>
         <p class="section-desc" style="margin-top:12px;font-size:15px">Todos los parámetros técnicos del Validador TICS F7. Para procesos de licitación o integración técnica, solicita la ficha en PDF.</p>
-        <div style="margin-top:28px">
-          <a href="nrtec.html#contacto" class="btn btn-primary" style="background:#1054B8">
-            Descargar ficha técnica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
       </div>
       <div>
-        <div class="specs-grid"><div class="spec-row"><span class="spec-key">Protocolo NFC</span><span class="spec-val">ISO 14443 A/B · MIFARE · DESFire</span></div>
-<div class="spec-row"><span class="spec-key">Tiempo de respuesta</span><span class="spec-val">< 200ms por transacción</span></div>
-<div class="spec-row"><span class="spec-key">Conectividad</span><span class="spec-val">GPRS / 4G LTE · WiFi 802.11 b/g/n</span></div>
-<div class="spec-row"><span class="spec-key">Pantalla</span><span class="spec-val">LCD 3.5" color 320×240 px</span></div>
-<div class="spec-row"><span class="spec-key">Temperatura operativa</span><span class="spec-val">-10°C a +55°C</span></div>
-<div class="spec-row"><span class="spec-key">Protección</span><span class="spec-val">IP54, polvo y salpicaduras</span></div>
-<div class="spec-row"><span class="spec-key">Alimentación</span><span class="spec-val">9–36 VDC directo desde la unidad</span></div>
-<div class="spec-row"><span class="spec-key">Dimensiones</span><span class="spec-val">180 × 90 × 60 mm</span></div>
-<div class="spec-row"><span class="spec-key">Peso</span><span class="spec-val">380 g</span></div>
-<div class="spec-row"><span class="spec-key">Modos de pago</span><span class="spec-val">Tarjeta prepago · Tarjeta bancaria EMV · NFC móvil</span></div></div>
+        <div class="specs-grid-wrap"><div class="specs-grid specs-grid-blur"><div class="spec-row"><span class="spec-key">Procesador</span><span class="spec-val">Con Módem 4G+ integrado</span></div>
+<div class="spec-row"><span class="spec-key">Unidad lectora</span><span class="spec-val">Lector RFID con NFC y EMV y Scanner QR · Lectura de TICS tipo DESFIRE ISO 14443 A/B y Calypso</span></div>
+<div class="spec-row"><span class="spec-key">Tiempo de respuesta en lectura</span><span class="spec-val">< 200ms por transacción</span></div>
+<div class="spec-row"><span class="spec-key">Interface con el usuario</span><span class="spec-val">Pantalla gráfica a color · Alarma sonora</span></div>
+<div class="spec-row"><span class="spec-key">Geolocalización</span><span class="spec-val">GPS Glonass</span></div>
+<div class="spec-row"><span class="spec-key">Facilidad de manejo</span><span class="spec-val">Construcción modular que simplifica la instalación del equipo y agiliza los trabajos de mantenimiento correctivo y preventivo</span></div>
+<div class="spec-row"><span class="spec-key">Actualización de versiones</span><span class="spec-val">Uso de DOTA (Download Over The Air)</span></div></div><div class="specs-overlay">
+          <div class="specs-overlay-card">
+            <div class="specs-overlay-text">Ficha técnica completa disponible bajo solicitud</div>
+            <a href="nrtec.html#contacto" class="btn btn-primary" style="background:#1054B8">
+              Solicitar ficha técnica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div></div>
         <div class="specs-note">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           Las especificaciones pueden variar según configuración del proyecto. Consulta a tu asesor NRTEC.

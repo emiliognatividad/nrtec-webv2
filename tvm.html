@@ -93,6 +93,11 @@ img{display:block}
 
 /* SPECS TABLE */
 .specs-section{background:var(--gray-50);border-top:1px solid var(--gray-200)}
+.specs-grid-wrap{position:relative}
+.specs-grid-blur{filter:blur(6px);user-select:none;pointer-events:none}
+.specs-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.55);border-radius:var(--r-lg)}
+.specs-overlay-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:20px 28px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.specs-overlay-text{font-size:13px;color:var(--gray-500);margin-bottom:14px}
 .specs-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--gray-200);border-radius:var(--r-lg);overflow:hidden;background:#fff}
 @media(max-width:600px){.specs-grid{grid-template-columns:1fr}}
 .spec-row{display:flex;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--gray-100);gap:16px}
@@ -164,12 +169,12 @@ img{display:block}
 :focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-.prod-hero{background:linear-gradient(150deg,#2C1204 0%,#DC6803 100%);}
-.section-label{color:#DC6803;}
-.section-label::before{background:#DC6803;}
-.feat-card:hover{border-color:#DC6803;box-shadow:0 6px 24px #DC680318;}
-.use-pill-dot{background:#DC6803;}
-.use-pill:hover{border-color:#DC6803;color:#DC6803;}
+.prod-hero{background:linear-gradient(150deg,#2C1204 0%,#C2185B 100%);}
+.section-label{color:#C2185B;}
+.section-label::before{background:#C2185B;}
+.feat-card:hover{border-color:#C2185B;box-shadow:0 6px 24px #C2185B18;}
+.use-pill-dot{background:#C2185B;}
+.use-pill:hover{border-color:#C2185B;color:#C2185B;}
 </style>
 </head>
 <body>
@@ -209,7 +214,7 @@ img{display:block}
         <h1 id="prod-title">TVM, Terminal de Venta<br><em>Emite, recarga y administra en un solo equipo</em></h1>
         <p class="prod-hero-sub">Punto central de atención del sistema prepago. Emite tarjetas, recarga saldo y entrega comprobante, ideal para estaciones de alta afluencia.</p>
         <div class="prod-hero-ctas">
-          <a href="nrtec.html#contacto" class="btn btn-white" style="color:#DC6803;font-weight:700">
+          <a href="nrtec.html#contacto" class="btn btn-white" style="color:#C2185B;font-weight:700">
             Solicitar demostración <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
           <a href="nrtec.html#contacto" class="btn" style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.85);border:1.5px solid rgba(255,255,255,0.25)">
@@ -250,14 +255,9 @@ img{display:block}
         <div class="section-label">Ficha técnica</div>
         <h2 id="specs-title" class="section-title">Especificaciones completas</h2>
         <p class="section-desc" style="margin-top:12px;font-size:15px">Todos los parámetros técnicos del TVM, Terminal de Venta. Para procesos de licitación o integración técnica, solicita la ficha en PDF.</p>
-        <div style="margin-top:28px">
-          <a href="nrtec.html#contacto" class="btn btn-primary" style="background:#DC6803">
-            Descargar ficha técnica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
       </div>
       <div>
-        <div class="specs-grid"><div class="spec-row"><span class="spec-key">Pantallas</span><span class="spec-val">15" táctil operador + 7" táctil cliente</span></div>
+        <div class="specs-grid-wrap"><div class="specs-grid specs-grid-blur"><div class="spec-row"><span class="spec-key">Pantallas</span><span class="spec-val">15" táctil operador + 7" táctil cliente</span></div>
 <div class="spec-row"><span class="spec-key">Emisión de tarjetas</span><span class="spec-val">Dispenser automático · hasta 200 tarjetas</span></div>
 <div class="spec-row"><span class="spec-key">Medios de pago</span><span class="spec-val">Efectivo · Débito · Crédito · NFC · CoDi · SPEI</span></div>
 <div class="spec-row"><span class="spec-key">Impresoras</span><span class="spec-val">Térmica comprobante + impresora de tarjetas personalizadas</span></div>
@@ -266,7 +266,14 @@ img{display:block}
 <div class="spec-row"><span class="spec-key">Temperatura operativa</span><span class="spec-val">0°C a +45°C</span></div>
 <div class="spec-row"><span class="spec-key">Alimentación</span><span class="spec-val">110–220 VAC / UPS integrado 30 min</span></div>
 <div class="spec-row"><span class="spec-key">Dimensiones</span><span class="spec-val">600 × 500 × 1,600 mm</span></div>
-<div class="spec-row"><span class="spec-key">Peso</span><span class="spec-val">160 kg, base niveladora incluida</span></div></div>
+<div class="spec-row"><span class="spec-key">Peso</span><span class="spec-val">160 kg, base niveladora incluida</span></div></div><div class="specs-overlay">
+          <div class="specs-overlay-card">
+            <div class="specs-overlay-text">Ficha técnica completa disponible bajo solicitud</div>
+            <a href="nrtec.html#contacto" class="btn btn-primary" style="background:#1054B8">
+              Solicitar ficha técnica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div></div>
         <div class="specs-note">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           Las especificaciones pueden variar según configuración del proyecto. Consulta a tu asesor NRTEC.
@@ -365,7 +372,7 @@ img{display:block}
         <p>Hacemos demos en vivo con datos reales de sistemas activos en México. Sin compromisos.</p>
       </div>
       <div class="cta-band-btns">
-        <a href="nrtec.html#contacto" class="btn" style="background:#fff;color:#DC6803;font-weight:700">
+        <a href="nrtec.html#contacto" class="btn" style="background:#fff;color:#C2185B;font-weight:700">
           Agendar demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="https://wa.me/5214441650909" class="btn" style="background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.85);border:1.5px solid rgba(255,255,255,0.25)" target="_blank" rel="noopener">
