@@ -1855,6 +1855,17 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
 .sf-social:hover { background: rgba(255,255,255,0.12); color: #fff; }
 .sf-social svg { width: 14px; height: 14px; }
 
+
+/* Orbit animation — inside the product grid */
+.prod-orbit-cell{display:flex;align-items:center;justify-content:center;background:transparent;border:none;min-height:200px}
+.prod-orbit{position:relative;width:180px;height:180px}
+.prod-orbit-ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(26,111,232,0.20)}
+.prod-orbit-ring-2{inset:30px;border-color:rgba(26,111,232,0.12)}
+.prod-orbit-arm{position:absolute;top:50%;left:50%;width:0;height:0;animation:orbit-arm 3.5s linear infinite}
+@keyframes orbit-arm{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.prod-orbit-dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 8px rgba(26,111,232,0.55);top:-5px;left:80px}
+.prod-orbit-core{position:absolute;width:16px;height:16px;top:50%;left:50%;margin-top:-8px;margin-left:-8px;border-radius:50%;background:rgba(26,111,232,0.12);border:2px solid rgba(26,111,232,0.45)}
+@media(max-width:900px){.prod-orbit-cell{display:none!important}}
 </style>
 </head>
 <body>
@@ -1920,24 +1931,17 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
         >
       </div>
       <div class="hero-announce" role="note" aria-live="polite">
-        <span class="hero-announce-badge">Nuevo</span>
         <span class="hero-announce-text" id="heroAnnounceText">
-          <span class="active" data-i="0">Plataforma de control operacional v4.2 disponible</span>
-          <span data-i="1">Validador TICS F7: lectura en menos de 200ms</span>
-          <span data-i="2">Soporte técnico 24/7 desde San Luis Potosí</span>
-          <span data-i="3">Más de 20 ciudades operando con NRTEC</span>
-          <span data-i="4">Prepago Integral: una sola tarjeta, toda la red</span>
-          <span data-i="5">Implementación completa en 6 a 14 semanas</span>
-          <span data-i="6">99.7% de uptime garantizado por contrato</span>
-          <span data-i="7">Centro de Control: monitoreo de flota en tiempo real</span>
-          <span data-i="8">Actualizaciones de firmware sin costo adicional</span>
-          <span data-i="9">Certificación ISO 9001 en todos nuestros procesos</span>
-          <span data-i="10">StopBus: información de llegadas en tiempo real</span>
-          <span data-i="11">APIs abiertas para integrarte con tus sistemas</span>
-          <span data-i="12">Hardware y software 100% desarrollados por NRTEC</span>
-          <span data-i="13">Miembro activo de ITS México</span>
-          <span data-i="14">Cajero Exterior y TVM: recarga sin filas</span>
-          <span data-i="15">25+ años de experiencia en transporte público</span>
+                    <span class="active" data-i="0">StopBus, App de Transporte para el usuario</span>
+          <span data-i="1">Soporte 24/7</span>
+          <span data-i="2">Hardware y software principal, desarrollado por nosotros</span>
+          <span data-i="3">Más de 25 años de experiencia</span>
+          <span data-i="4">Interconexión con elementos de terceros</span>
+          <span data-i="5">Actualizaciones ágiles</span>
+          <span data-i="6">Podemos ir desde la planeación hasta la operación del Prepago</span>
+          <span data-i="7">Ofrecemos Proyectos "Llave en mano"</span>
+          <span data-i="8">Presencia en más de 20 cuidades</span>
+          <span data-i="9">Pensamos en todos: usuarios, transportistas, conductores y autoridades</span>
         </span>
       </div>
 
@@ -1952,25 +1956,6 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="#ecosistema" class="btn btn-lg" style="background:#FFFFFF;color:#1054B8;border:none;">Ver soluciones</a>
-      </div>
-
-      <div class="hero-proof" role="list">
-        <div class="hero-proof-item" role="listitem">
-          <span class="live-dot" aria-hidden="true"></span>
-          <span>Monitoreo en tiempo real</span>
-        </div>
-        <div class="hero-proof-item" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>ISO 9001 certificado</span>
-        </div>
-        <div class="hero-proof-item" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>+20 ciudades en México</span>
-        </div>
-        <div class="hero-proof-item" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>99.7% uptime SLA</span>
-        </div>
       </div>
 
   </div><!-- /hero-content -->
@@ -2147,19 +2132,20 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
     <div class="products-header">
       <div>
         <p class="eyebrow">Hardware, software y flujo operativo</p>
-        <h2 id="eco-title" class="section-title">Un ecosistema integrado,<br>seis componentes</h2>
+        <h2 id="eco-title" class="section-title">Un ecosistema integrado,<br>ocho componentes</h2>
       </div>
       <p class="section-desc" style="max-width:360px;font-size:16px;">
-        Desde el validador en la puerta del autobús hasta el reporte financiero del día. Filtra por categoría o explora todo el flujo.
+        Desde el validador a bordo del autobús hasta el reporte financiero del día. Filtre por categoría o visualice el flujo completo de datos.
       </p>
     </div>
 
     <div class="prod-tabs" role="tablist" aria-label="Categorías del ecosistema">
       <button class="prod-tab active" role="tab" aria-selected="true" data-filter="all">Todos</button>
       <button class="prod-tab" role="tab" aria-selected="false" data-filter="validacion">Validación</button>
-      <button class="prod-tab" role="tab" aria-selected="false" data-filter="recaudacion">Recaudación</button>
-      <button class="prod-tab" role="tab" aria-selected="false" data-filter="control">Control operacional</button>
-      <button class="prod-tab" role="tab" aria-selected="false" data-filter="informacion">Información al usuario</button>
+      <button class="prod-tab" role="tab" aria-selected="false" data-filter="operacion">Operación</button>
+      <button class="prod-tab" role="tab" aria-selected="false" data-filter="recarga">Red de Recarga</button>
+      <button class="prod-tab" role="tab" aria-selected="false" data-filter="flota">Gestión de Flota</button>
+      <button class="prod-tab" role="tab" aria-selected="false" data-filter="usuario">Apoyo al usuario</button>
     </div>
 
     <div class="prod-grid" id="prodGrid">
@@ -2168,15 +2154,14 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       <article class="prod-card" data-category="validacion">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 1</span>
-          <div class="prod-icon-wrap" aria-hidden="true">
+                    <div class="prod-icon-wrap" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 7h.01M17 7h-7M7 11h7"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
           <span class="prod-tag">Validación</span>
           <h3 class="prod-name">Validador TICS F7</h3>
-          <p class="prod-desc">Lee tarjetas contactless NFC/RFID en &lt;200ms y reporta cada transacción en tiempo real, incluso sin señal — sincroniza al reconectar.</p>
+          <p class="prod-desc">Terminal de cobro electrónico de NRTEC. Lee la tarjeta, autoriza el acceso y registra la transacción en menos de 200 ms.</p>
           <a href="validador-tics-f7.html" class="prod-link">
             Ver especificaciones
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -2185,18 +2170,17 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       </article>
 
       <!-- Centro de Control -->
-      <article class="prod-card" data-category="control">
+      <article class="prod-card" data-category="flota">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 2</span>
-          <div class="prod-icon-wrap" style="background:rgba(0,229,195,0.1);border-color:rgba(0,229,195,0.25);color:var(--teal)" aria-hidden="true">
+                    <div class="prod-icon-wrap" style="background:rgba(0,229,195,0.1);border-color:rgba(0,229,195,0.25);color:var(--teal)" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
-          <span class="prod-tag" style="color:var(--teal);background:rgba(0,229,195,0.08);border-color:rgba(0,229,195,0.2)">Plataforma central</span>
-          <h3 class="prod-name">Centro de Control NRTEC</h3>
-          <p class="prod-desc">Mapa de flota en tiempo real, alertas automáticas por desviación o falla, y comunicación directa con conductores desde el panel.</p>
+          <span class="prod-tag" style="color:var(--teal);background:rgba(0,229,195,0.08);border-color:rgba(0,229,195,0.2)">Gestión de Flota</span>
+          <h3 class="prod-name">Plataforma SAE</h3>
+          <p class="prod-desc">Solución integral que su centro de control utiliza para supervisar, gestionar y optimizar cada unidad de transporte público, garantizando una operación impecable que se refleja en la experiencia del usuario.</p>
           <a href="#contacto" class="prod-link">
             Solicitar demo
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -2205,18 +2189,17 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       </article>
 
       <!-- Consola de Operador -->
-      <article class="prod-card" data-category="control">
+      <article class="prod-card" data-category="operacion">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 3</span>
-          <div class="prod-icon-wrap" aria-hidden="true">
+                    <div class="prod-icon-wrap" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 7h4M6 11h3M15 7l-2 4h4l-2 4"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
           <span class="prod-tag">Control operacional</span>
           <h3 class="prod-name">Consola de Operador</h3>
-          <p class="prod-desc">Pantalla embarcada para el conductor: rutas, pasajeros, incidencias y comunicación directa con el centro de control.</p>
+          <p class="prod-desc">El puesto de mando del conductor.</p>
           <a href="consola-operador.html" class="prod-link">
             Ver especificaciones
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -2225,18 +2208,17 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       </article>
 
       <!-- Cajero Exterior -->
-      <article class="prod-card" data-category="recaudacion">
+      <article class="prod-card" data-category="recarga">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 4</span>
-          <div class="prod-icon-wrap" aria-hidden="true">
+                    <div class="prod-icon-wrap" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/><circle cx="15" cy="15" r="1" fill="currentColor"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
           <span class="prod-tag">Recaudación</span>
           <h3 class="prod-name">Cajero Exterior</h3>
-          <p class="prod-desc">Quiosco de recarga en paradas y estaciones. Acepta efectivo, tarjeta bancaria y pagos móviles. Resistente a la intemperie IP65.</p>
+          <p class="prod-desc">Quiosco de recarga autónomo para paradas y terminales. Resiste la intemperie y actualiza el saldo en segundos, sin requerir personal de atención.</p>
           <a href="cajero-exterior.html" class="prod-link">
             Ver especificaciones
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -2244,19 +2226,28 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
         </div>
       </article>
 
+      <!-- ORBIT CENTER -->
+      <div class="prod-orbit-cell" aria-hidden="true">
+        <div class="prod-orbit">
+          <div class="prod-orbit-ring"></div>
+          <div class="prod-orbit-ring prod-orbit-ring-2"></div>
+          <div class="prod-orbit-arm"><div class="prod-orbit-dot"></div></div>
+          <div class="prod-orbit-core"></div>
+        </div>
+      </div>
+
       <!-- TVM -->
-      <article class="prod-card" data-category="recaudacion">
+      <article class="prod-card" data-category="recarga">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 5</span>
-          <div class="prod-icon-wrap" aria-hidden="true">
+                    <div class="prod-icon-wrap" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6M12 10v5M9 19h6"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
           <span class="prod-tag">Recaudación</span>
           <h3 class="prod-name">TVM, Terminal de Venta</h3>
-          <p class="prod-desc">Emite tarjetas nuevas, procesa pagos múltiples y entrega comprobante. Ideal para estaciones de alta afluencia.</p>
+          <p class="prod-desc">Punto conveniente de atención del sistema de prepago. Venta de tarjetas, consulta y recarga de saldo, ideal para estaciones de alta afluencia.</p>
           <a href="tvm.html" class="prod-link">
             Ver especificaciones
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -2265,26 +2256,65 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       </article>
 
       <!-- StopBus -->
-      <article class="prod-card" data-category="informacion">
+      <article class="prod-card" data-category="usuario">
         <div class="prod-card-visual">
           <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
-          <span class="eco-card-step-tag" style="position:absolute;top:14px;left:14px;z-index:2">Paso 6</span>
-          <div class="prod-icon-wrap" aria-hidden="true">
+                    <div class="prod-icon-wrap" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="14" rx="2"/><path d="M6 19h4M14 19h4M12 16v3"/><path d="M6 6h12M6 10h8"/></svg>
           </div>
         </div>
         <div class="prod-card-body">
           <span class="prod-tag">Información al usuario</span>
           <h3 class="prod-name">StopBus</h3>
-          <p class="prod-desc">Panel de parada en tiempo real: próximas llegadas, ocupación y avisos operativos. Conectado 24/7 al sistema central.</p>
+          <p class="prod-desc">Simplifica tu día a día al usar transporte público, ahorrar tiempo y agilizar tu viaje. A un toque en tu teléfono celular.</p>
           <a href="stopbus.html" class="prod-link">
+            ¿Qué es?
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Contador de Pasajeros -->
+      <article class="prod-card" data-category="operacion">
+        <div class="prod-card-visual">
+          <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
+          <div class="prod-icon-wrap" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <span class="prod-tag">Validación</span>
+          <h3 class="prod-name">Contador de Pasajeros</h3>
+          <p class="prod-desc">Solución inteligente para el aforo preciso de usuarios.</p>
+          <a href="contador-pasajeros.html" class="prod-link">
             Ver especificaciones
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </article>
 
+      <!-- Terminal de Recarga NR Tec A2.0 -->
+      <article class="prod-card" data-category="recarga">
+        <div class="prod-card-visual">
+          <div class="grid-overlay" aria-hidden="true" style="opacity:0.3"></div>
+          <div class="prod-icon-wrap" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/><path d="M9 7h6M9 11h4"/></svg>
+          </div>
+        </div>
+        <div class="prod-card-body">
+          <span class="prod-tag">Recaudación</span>
+          <h3 class="prod-name">Terminal de Recarga NR Tec A2.0</h3>
+          <p class="prod-desc">Optimice sus servicios y aumente el flujo de clientes en su tienda de conveniencia con nuestra solución de recargas electrónicas totalmente integrada a su sistema de caja.</p>
+          <a href="terminal-recarga-a20.html" class="prod-link">
+            Ver especificaciones
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+
     </div>
+
 
     <div class="eco-cta" style="margin-top:48px">
       <div class="eco-cta-text">
@@ -2939,6 +2969,7 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
   /* Product tab filter */
   var tabs  = document.querySelectorAll('.prod-tab');
   var cards = document.querySelectorAll('.prod-card');
+  var orbitCell = document.querySelector('.prod-orbit-cell');
   tabs.forEach(function(tab){
     tab.addEventListener('click', function(){
       tabs.forEach(function(t){ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
@@ -2947,6 +2978,7 @@ footer { background:#071428; border-top-color:rgba(255,255,255,0.06); }
       cards.forEach(function(c){
         c.style.display = (f==='all' || c.getAttribute('data-category')===f) ? 'flex' : 'none';
       });
+      if (orbitCell) orbitCell.style.display = (f==='all') ? 'flex' : 'none';
     });
   });
 
