@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TVM, Terminal de Venta, NRTEC | Emite, recarga y administra en un solo equipo</title>
 <meta name="description" content="La Terminal de Venta y Mantenimiento (TVM) de NRTEC es el punto central de atención al usuario del sistema prepago. Emite tarjetas nuevas, recarga saldo, g">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -19,8 +16,8 @@
   --r-sm:6px; --r-md:10px; --r-lg:16px; --r-xl:24px; --max:1280px;
 }
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
-h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
+h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
 a{text-decoration:none}
 img{display:block}
 .container{max-width:var(--max);margin:0 auto;padding:0 48px}
@@ -37,7 +34,7 @@ img{display:block}
 .nav-links a{font-size:14px;font-weight:500;color:var(--gray-500);padding:6px 12px;border-radius:var(--r-sm);transition:all 150ms}
 .nav-links a:hover{color:var(--blue);background:var(--blue-dim)}
 .nav-actions{display:flex;align-items:center;gap:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r-md);font-family:'Inter',sans-serif;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 150ms ease;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r-md);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 150ms ease;white-space:nowrap}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:var(--blue-lt);transform:translateY(-1px)}
 .btn-ghost{background:transparent;color:var(--gray-500);border:1.5px solid var(--gray-200)}
@@ -64,7 +61,7 @@ img{display:block}
 .prod-hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.60);margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .prod-hero-eyebrow::before{content:'';width:16px;height:1.5px;background:rgba(255,255,255,0.4);flex-shrink:0}
 .prod-hero h1{font-size:clamp(36px,5vw,60px);color:#fff;margin-bottom:16px}
-.prod-hero h1 em{font-style:normal;color:rgba(255,255,255,0.55)}
+.prod-hero h1 em{display:block;font-style:italic;font-weight:500;font-size:clamp(16px,2vw,20px);letter-spacing:0;line-height:1.5;color:rgba(255,255,255,0.68);margin-top:14px}
 .prod-hero-sub{font-size:17px;color:rgba(255,255,255,0.78);line-height:1.75;max-width:500px;margin-bottom:32px}
 .prod-hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 
@@ -103,7 +100,7 @@ img{display:block}
 .spec-row{display:flex;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--gray-100);gap:16px}
 .spec-row:nth-child(even){background:var(--gray-50)}
 .spec-key{font-size:13px;font-weight:600;color:var(--gray-500);flex-shrink:0;min-width:140px}
-.spec-val{font-size:13px;color:var(--ink);text-align:right;line-height:1.4}
+.spec-val{font-size:13px;font-weight:600;color:var(--ink);text-align:right;line-height:1.4}
 .specs-note{margin-top:16px;font-size:12px;color:var(--gray-300);display:flex;align-items:center;gap:6px}
 .specs-note svg{width:14px;height:14px;flex-shrink:0}
 
@@ -113,8 +110,8 @@ img{display:block}
 @media(max-width:768px){.features-grid{grid-template-columns:1fr}}
 .feat-card{border:1px solid var(--gray-200);border-radius:var(--r-lg);padding:28px;transition:border-color 200ms,box-shadow 200ms}
 .feat-card:hover{border-color:var(--blue);box-shadow:0 6px 24px rgba(16,84,184,0.08)}
-.feat-card-num{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:var(--gray-100);letter-spacing:-0.04em;line-height:1;margin-bottom:16px}
-.feat-card-title{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:var(--ink);margin-bottom:8px}
+.feat-card-num{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:36px;font-weight:700;color:var(--gray-100);letter-spacing:-0.04em;line-height:1;margin-bottom:16px}
+.feat-card-title{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .feat-card-desc{font-size:14px;color:var(--gray-500);line-height:1.7}
 
 /* USE CASES */
@@ -133,7 +130,7 @@ img{display:block}
 .rel-card:hover{border-color:var(--blue);box-shadow:0 4px 16px rgba(16,84,184,0.08)}
 .rel-card-icon{width:40px;height:40px;border-radius:var(--r-md);background:var(--blue-dim);border:1px solid rgba(16,84,184,0.12);display:flex;align-items:center;justify-content:center;color:var(--blue)}
 .rel-card-icon svg{width:18px;height:18px}
-.rel-card-name{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
+.rel-card-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
 .rel-card-desc{font-size:13px;color:var(--gray-500);line-height:1.5;flex:1}
 .rel-card-link{font-size:13px;font-weight:600;color:var(--blue);display:flex;align-items:center;gap:5px;margin-top:4px}
 .rel-card-link svg{width:13px;height:13px;transition:transform 150ms}
@@ -143,7 +140,7 @@ img{display:block}
 .cta-band{background:var(--navy);padding:72px 0;position:relative;overflow:hidden}
 .cta-band-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:48px 48px}
 .cta-band-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.cta-band-inner h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;color:#fff;margin-bottom:6px}
+.cta-band-inner h2{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;color:#fff;margin-bottom:6px}
 .cta-band-inner p{font-size:15px;color:rgba(255,255,255,0.65)}
 .cta-band-btns{display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap}
 
@@ -152,7 +149,7 @@ img{display:block}
 .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.4fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.07)}
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
-.sf-logo-mark{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;display:block;margin-bottom:8px}
+.sf-logo-mark{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:20px;color:#fff;display:block;margin-bottom:8px}
 .sf-logo-mark span{color:#3B8AF2}
 .sf-tagline{font-size:13px;color:rgba(255,255,255,0.40);line-height:1.7;max-width:210px}
 .sf-col-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#fff;margin-bottom:14px}
@@ -210,7 +207,7 @@ img{display:block}
     <div class="prod-hero-inner">
       <div>
         
-        <h1 id="prod-title">TVM, Máquina Expendedora de Billetes de papel y electrónicos<br><em>Venta de tarjetas de Transporte, Recarga y Consulta de Saldo, todo en un solo equipo</em></h1>
+        <h1 id="prod-title">TVM, Máquina Expendedora de Billetes de papel y electrónicos<em>Venta de tarjetas de Transporte, Recarga y Consulta de Saldo, todo en un solo equipo</em></h1>
         <div class="prod-hero-ctas">
           <a href="nrtec.html#contacto" class="btn btn-white" style="color:#C2185B;font-weight:700">
             Solicitar demostración <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -222,10 +219,12 @@ img{display:block}
       </div>
       <div class="hero-spec-card" aria-label="Especificaciones principales">
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.40);margin-bottom:16px">Especificaciones clave</div>
-                <div class="hero-spec-row"><span class="hero-spec-label">Interface</span><span class="hero-spec-val">Panel táctil Resistivo a color</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Unidad lectora</span><span class="hero-spec-val">RFID NFC, EMV y Scanner QR</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Venta de tarjetas</span><span class="hero-spec-val">Dispensador 100+ tarjetas</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Medios de pago</span><span class="hero-spec-val">Billetes, Moneda, T. Bancarias</span></div>
+                <div class="hero-spec-row"><span class="hero-spec-label">Interface con el usuario</span><span class="hero-spec-val">Panel táctil tipo Resistivo a color</span></div>
+<div class="hero-spec-row" style="align-items:flex-start"><span class="hero-spec-label">Unidad lectora</span><span class="hero-spec-val">Lector RFID con NFC y EMV y Scanner QR<br>Lectura de TICS tipo DESFIRE ISO 14443 A/B y Calypso</span></div>
+<div class="hero-spec-row"><span class="hero-spec-label">Venta de tarjetas</span><span class="hero-spec-val">Dispensador de 100 tarjetas o más</span></div>
+<div class="hero-spec-row"><span class="hero-spec-label">Medios de pago aceptado</span><span class="hero-spec-val">Billetes, Moneda, Tarjetas Bancarias</span></div>
+<div class="hero-spec-row" style="align-items:flex-start"><span class="hero-spec-label">Diseño resistente</span><span class="hero-spec-val">Construcción general en acero al carbón AISI 1020 C-14 / C-10</span></div>
+<div class="hero-spec-row" style="align-items:flex-start"><span class="hero-spec-label">Elementos de seguridad</span><span class="hero-spec-val">Zona de valores independiente, Detectores de apertura, cerraduras de seguridad</span></div>
 <div class="hero-spec-row"><span class="hero-spec-label">Emisión de comprobantes</span><span class="hero-spec-val">Impresora de tickets</span></div>
       </div>
     </div>
@@ -280,22 +279,22 @@ img{display:block}
       <div class="feat-card">
         <div class="feat-card-num">01</div>
         <div class="feat-card-title">Emisión instantánea de tarjetas</div>
-        <div class="feat-card-desc">Entrega tarjeta personalizada con foto y datos en menos de 45 segundos. Dispenser para 200 tarjetas.</div>
+        <div class="feat-card-desc">Entrega tarjeta personalizada con foto y datos en <strong>menos de 45 segundos</strong>. <em>Dispenser para 200 tarjetas.</em></div>
       </div>
       <div class="feat-card">
         <div class="feat-card-num">02</div>
-        <div class="feat-card-title">Gestión de saldo completa</div>
-        <div class="feat-card-desc">Recarga, historial, bloqueo por extravío y transferencia de saldo en la misma terminal.</div>
+        <div class="feat-card-title">Recarga ágil de saldo</div>
+        <div class="feat-card-desc"><strong>Recarga de saldo en segundos</strong>, <em>con historial y bloqueo por extravío disponibles al instante.</em></div>
       </div>
       <div class="feat-card">
         <div class="feat-card-num">03</div>
-        <div class="feat-card-title">Pantalla dual operador/cliente</div>
-        <div class="feat-card-desc">El agente gestiona en la pantalla principal mientras el cliente autoriza en la suya.</div>
+        <div class="feat-card-title">Instrucciones intuitivas en pantalla para el uso de la terminal</div>
+        <div class="feat-card-desc"><strong>Guía visual paso a paso</strong> <em>que facilita el uso a cualquier persona, sin necesidad de asistencia.</em></div>
       </div>
       <div class="feat-card">
         <div class="feat-card-num">04</div>
-        <div class="feat-card-title">Integración con Prepago Integral</div>
-        <div class="feat-card-desc">Cada operación se registra en la plataforma. La liquidación se genera automáticamente al cierre.</div>
+        <div class="feat-card-title">Integración con Plataforma de Recaudo</div>
+        <div class="feat-card-desc">Cada operación se registra en la plataforma. <strong>La liquidación se genera automáticamente</strong> <em>al cierre.</em></div>
       </div>
     </div>
   </div>
@@ -327,7 +326,7 @@ img{display:block}
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 7h6M9 11h6"/></svg>
         </div>
         <div class="rel-card-name">Cajero Exterior</div>
-        <div class="rel-card-desc">Quiosco de recarga autónomo para paradas y terminales. Resiste la intemperie y actualiza el saldo en segundos, sin requerir personal de atención.</div>
+        <div class="rel-card-desc">Quiosco de recarga autónomo para paradas y terminales. <strong>Resiste la intemperie</strong> y actualiza el saldo <em>en segundos, sin requerir personal de atención.</em></div>
         <span class="rel-card-link">Ver especificaciones <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
       <a href="terminal-recarga-a20.html" class="rel-card">
@@ -335,7 +334,7 @@ img{display:block}
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/><path d="M9 7h6M9 11h4"/></svg>
         </div>
         <div class="rel-card-name">Terminal de Recarga NR Tec A2.0</div>
-        <div class="rel-card-desc">Optimice sus servicios y aumente el flujo de clientes en su tienda de conveniencia con nuestra solución de recargas electrónicas totalmente integrada a su sistema de caja.</div>
+        <div class="rel-card-desc"><strong>Optimice sus servicios y aumente el flujo de clientes</strong> en su tienda de conveniencia con nuestra solución de recargas electrónicas <em>totalmente integrada a su sistema de caja.</em></div>
         <span class="rel-card-link">Ver especificaciones <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </a>
     </div>
