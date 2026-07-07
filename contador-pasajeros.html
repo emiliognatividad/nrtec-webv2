@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contador de Pasajeros, NRTEC | Conteo preciso de pasajeros a bordo</title>
 <meta name="description" content="Equipo a bordo para el conteo preciso de pasajeros, con instalación simplificada por puerta y transmisión directa de datos al validador.">>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -19,8 +16,8 @@
   --r-sm:6px; --r-md:10px; --r-lg:16px; --r-xl:24px; --max:1280px;
 }
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
-h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.6}
+h1,h2,h3,h4{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
 a{text-decoration:none}
 img{display:block}
 .container{max-width:var(--max);margin:0 auto;padding:0 48px}
@@ -37,7 +34,7 @@ img{display:block}
 .nav-links a{font-size:14px;font-weight:500;color:var(--gray-500);padding:6px 12px;border-radius:var(--r-sm);transition:all 150ms}
 .nav-links a:hover{color:var(--blue);background:var(--blue-dim)}
 .nav-actions{display:flex;align-items:center;gap:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r-md);font-family:'Inter',sans-serif;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 150ms ease;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:var(--r-md);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all 150ms ease;white-space:nowrap}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:var(--blue-lt);transform:translateY(-1px)}
 .btn-ghost{background:transparent;color:var(--gray-500);border:1.5px solid var(--gray-200)}
@@ -113,8 +110,8 @@ img{display:block}
 @media(max-width:768px){.features-grid{grid-template-columns:1fr}}
 .feat-card{border:1px solid var(--gray-200);border-radius:var(--r-lg);padding:28px;transition:border-color 200ms,box-shadow 200ms}
 .feat-card:hover{border-color:var(--blue);box-shadow:0 6px 24px rgba(16,84,184,0.08)}
-.feat-card-num{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:var(--gray-100);letter-spacing:-0.04em;line-height:1;margin-bottom:16px}
-.feat-card-title{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;color:var(--ink);margin-bottom:8px}
+.feat-card-num{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:36px;font-weight:700;color:var(--gray-100);letter-spacing:-0.04em;line-height:1;margin-bottom:16px}
+.feat-card-title{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .feat-card-desc{font-size:14px;color:var(--gray-500);line-height:1.7}
 
 /* USE CASES */
@@ -133,7 +130,7 @@ img{display:block}
 .rel-card:hover{border-color:var(--blue);box-shadow:0 4px 16px rgba(16,84,184,0.08)}
 .rel-card-icon{width:40px;height:40px;border-radius:var(--r-md);background:var(--blue-dim);border:1px solid rgba(16,84,184,0.12);display:flex;align-items:center;justify-content:center;color:var(--blue)}
 .rel-card-icon svg{width:18px;height:18px}
-.rel-card-name{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
+.rel-card-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
 .rel-card-desc{font-size:13px;color:var(--gray-500);line-height:1.5;flex:1}
 .rel-card-link{font-size:13px;font-weight:600;color:var(--blue);display:flex;align-items:center;gap:5px;margin-top:4px}
 .rel-card-link svg{width:13px;height:13px;transition:transform 150ms}
@@ -143,7 +140,7 @@ img{display:block}
 .cta-band{background:var(--navy);padding:72px 0;position:relative;overflow:hidden}
 .cta-band-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:48px 48px}
 .cta-band-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.cta-band-inner h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;color:#fff;margin-bottom:6px}
+.cta-band-inner h2{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;color:#fff;margin-bottom:6px}
 .cta-band-inner p{font-size:15px;color:rgba(255,255,255,0.65)}
 .cta-band-btns{display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap}
 
@@ -152,7 +149,7 @@ img{display:block}
 .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.4fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.07)}
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
-.sf-logo-mark{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#fff;display:block;margin-bottom:8px}
+.sf-logo-mark{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:20px;color:#fff;display:block;margin-bottom:8px}
 .sf-logo-mark span{color:#3B8AF2}
 .sf-tagline{font-size:13px;color:rgba(255,255,255,0.40);line-height:1.7;max-width:210px}
 .sf-col-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#fff;margin-bottom:14px}
@@ -209,8 +206,7 @@ img{display:block}
   <div class="container">
     <div class="prod-hero-inner">
       <div>
-        <div class="prod-hero-eyebrow">Validación embarcada</div>
-        <h1 id="prod-title">Contador de Pasajeros<br><em>Solución inteligente para el aforo preciso de usuarios</em></h1>
+        <h1 id="prod-title">Contador de Pasajeros</h1>
         <p class="prod-hero-sub">Equipo a bordo para el conteo preciso, con instalación simplificada por puerta y transmisión directa de datos al validador.</p>
         <div class="prod-hero-ctas">
           <a href="nrtec.html#contacto" class="btn btn-white" style="color:#1054B8;font-weight:700">
@@ -224,10 +220,10 @@ img{display:block}
       <div class="hero-spec-card" aria-label="Especificaciones principales">
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.40);margin-bottom:16px">Especificaciones clave</div>
                 <div class="hero-spec-row"><span class="hero-spec-label">Confiabilidad</span><span class="hero-spec-val">Superior al 98%</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Comunicación</span><span class="hero-spec-val">Integrado al validador</span></div>
+<div class="hero-spec-row" style="align-items:flex-start"><span class="hero-spec-label">Comunicación de información</span><span class="hero-spec-val">Integrado directamente al validador para la transmisión eficiente de datos en tiempo real</span></div>
 <div class="hero-spec-row"><span class="hero-spec-label">Estructura</span><span class="hero-spec-val">Aluminio</span></div>
 <div class="hero-spec-row"><span class="hero-spec-label">Sentido del flujo</span><span class="hero-spec-val">Distingue ascensos y descensos</span></div>
-<div class="hero-spec-row"><span class="hero-spec-label">Instalación</span><span class="hero-spec-val">Un equipo por puerta</span></div>
+<div class="hero-spec-row" style="align-items:flex-start"><span class="hero-spec-label">Facilidad de manejo</span><span class="hero-spec-val">Construcción modular que simplifica la instalación del equipo y agiliza los trabajos de mantenimiento correctivo y preventivo</span></div>
       </div>
     </div>
   </div>
