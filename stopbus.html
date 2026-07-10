@@ -103,6 +103,10 @@ img{display:block}
 .spec-val{font-size:13px;color:var(--ink);text-align:right;line-height:1.4}
 .specs-note{margin-top:16px;font-size:12px;color:var(--gray-300);display:flex;align-items:center;gap:6px}
 .specs-note svg{width:14px;height:14px;flex-shrink:0}
+.prod-image-block{margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:40px 20px;border:1.5px dashed var(--gray-200);border-radius:var(--r-lg);background:#fff}
+.prod-image-frame{width:72px;height:72px;border-radius:50%;background:var(--gray-50);display:flex;align-items:center;justify-content:center}
+.prod-image-frame svg{width:32px;height:32px}
+.prod-image-caption{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;color:var(--gray-500);text-align:center}
 
 /* FEATURES */
 .features-section{background:#fff}
@@ -208,7 +212,6 @@ img{display:block}
       <div>
         
         <h1 id="prod-title">StopBus<br><em>Llegada del próximo camión a la parada, en tiempo real</em></h1>
-        <p class="prod-hero-sub"></p>
       </div>
       <div class="hero-spec-card" aria-label="Especificaciones principales">
         <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.40);margin-bottom:16px">Aplicación en teléfono celular</div>
@@ -234,7 +237,37 @@ img{display:block}
   </div>
 </div>
 
-
+<!-- SPECS -->
+<section class="specs-section sp" id="especificaciones" aria-labelledby="specs-title">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start">
+      <div>
+        <div class="section-label">Ficha técnica</div>
+        <h2 id="specs-title" class="section-title">Especificaciones completas</h2>
+        <div class="prod-image-block">
+          <div class="prod-image-frame" style="color:#0891B2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+          </div>
+          <div class="prod-image-caption">StopBus</div>
+        </div>
+      </div>
+      <div>
+        <div class="specs-grid-wrap"><div class="specs-grid specs-grid-blur"><div class="spec-row"><span class="spec-key">Localizar</span><span class="spec-val">Ayuda a identificar las rutas de transporte público cercanas a tu ubicación geográfica en la ciudad</span></div><div class="spec-row"><span class="spec-key">Recargar</span><span class="spec-val">Utiliza tu teléfono para recargar saldo a tu tarjeta de transporte</span></div><div class="spec-row"><span class="spec-key">Generar Ticket Electrónico</span><span class="spec-val">Genera código QR para pagar la tarifa</span></div><div class="spec-row"><span class="spec-key">Conocer arribo de camión</span><span class="spec-val">Informa sobre el momento en que un autobús llegará al sitio de abordaje</span></div></div><div class="specs-overlay">
+          <div class="specs-overlay-card">
+            <div class="specs-overlay-text">Ficha técnica completa disponible bajo solicitud</div>
+            <a href="nrtec.html#contacto" class="btn btn-primary" style="background:#0891B2">
+              Solicitar ficha técnica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div></div>
+        <div class="specs-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Las especificaciones pueden variar según configuración del proyecto. Consulta a tu asesor NRTEC.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FEATURES -->
 
