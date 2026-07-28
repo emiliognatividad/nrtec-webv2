@@ -306,35 +306,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features-section sp" id="caracteristicas" aria-labelledby="feat-title">
-  <div class="container">
-    <h2 id="feat-title" class="section-title">Lo que lo hace diferente</h2>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-card-num">01</div>
-        <div class="feat-card-title">Emisión instantánea de tarjetas</div>
-        <div class="feat-card-desc">Entrega tarjeta personalizada con foto y datos en menos de 45 segundos. Dispenser para 200 tarjetas.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">02</div>
-        <div class="feat-card-title">Gestión de saldo completa</div>
-        <div class="feat-card-desc">Recarga, historial, bloqueo por extravío y transferencia de saldo en la misma terminal.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">03</div>
-        <div class="feat-card-title">Pantalla dual operador/cliente</div>
-        <div class="feat-card-desc">El agente gestiona en la pantalla principal mientras el cliente autoriza en la suya.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">04</div>
-        <div class="feat-card-title">Integración con Prepago Integral</div>
-        <div class="feat-card-desc">Cada operación se registra en la plataforma. La liquidación se genera automáticamente al cierre.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- USE CASES -->
 <section class="use-section sp-sm" id="casos-de-uso" aria-labelledby="use-title">
   <div class="container">
@@ -446,9 +417,9 @@ img{display:block}
   var nav=document.getElementById('navbar');
   function s(){nav.classList.toggle('scrolled',window.scrollY>20)}
   window.addEventListener('scroll',s,{passive:true});s();
-  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks'),a=document.getElementById('navActions');
-  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');a.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false')});
-  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');a.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
+  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks');
+  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
 })();
 </script>
 </body>

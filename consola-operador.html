@@ -303,35 +303,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features-section sp" id="caracteristicas" aria-labelledby="feat-title">
-  <div class="container">
-    <h2 id="feat-title" class="section-title">Lo que lo hace diferente</h2>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-card-num">01</div>
-        <div class="feat-card-title">Mapa de ruta en tiempo real</div>
-        <div class="feat-card-desc">Posición actual, siguiente parada y tiempo estimado de llegada, actualizado cada 30 segundos.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">02</div>
-        <div class="feat-card-title">Comunicación directa</div>
-        <div class="feat-card-desc">Mensajería cifrada con el Centro de Control. Reporta incidencias con un solo toque.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">03</div>
-        <div class="feat-card-title">Alertas operativas</div>
-        <div class="feat-card-desc">Recibe alertas automáticas: retrasos, cambios de itinerario y mensajes de la autoridad.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">04</div>
-        <div class="feat-card-title">Registro de jornada</div>
-        <div class="feat-card-desc">Marca inicio y fin de turno, registra eventos y genera el reporte diario sin papeles.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- USE CASES -->
 
 
@@ -431,9 +402,9 @@ img{display:block}
   var nav=document.getElementById('navbar');
   function s(){nav.classList.toggle('scrolled',window.scrollY>20)}
   window.addEventListener('scroll',s,{passive:true});s();
-  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks'),a=document.getElementById('navActions');
-  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');a.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false')});
-  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');a.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
+  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks');
+  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
 })();
 </script>
 </body>

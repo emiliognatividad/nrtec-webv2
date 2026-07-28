@@ -304,35 +304,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features-section sp" id="caracteristicas" aria-labelledby="feat-title">
-  <div class="container">
-    <h2 id="feat-title" class="section-title">Lo que lo hace diferente</h2>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-card-num">01</div>
-        <div class="feat-card-title">Operación desatendida 24/7</div>
-        <div class="feat-card-desc">Gestiona el inventario de efectivo y solicita mantenimiento automáticamente, sin personal.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">02</div>
-        <div class="feat-card-title">Multicanal en un solo equipo</div>
-        <div class="feat-card-desc">Efectivo, débito o CoDi en la misma terminal, sin configuración adicional.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">03</div>
-        <div class="feat-card-title">Monitoreo remoto</div>
-        <div class="feat-card-desc">El Centro de Control ve cada cajero en tiempo real: saldo, transacciones y disponibilidad.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">04</div>
-        <div class="feat-card-title">Carcasa anti-vandalismo</div>
-        <div class="feat-card-desc">Acero inoxidable calibre 14, cristal templado y cierre de alta resistencia.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- USE CASES -->
 <section class="use-section sp-sm" id="casos-de-uso" aria-labelledby="use-title">
   <div class="container">
@@ -444,9 +415,9 @@ img{display:block}
   var nav=document.getElementById('navbar');
   function s(){nav.classList.toggle('scrolled',window.scrollY>20)}
   window.addEventListener('scroll',s,{passive:true});s();
-  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks'),a=document.getElementById('navActions');
-  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');a.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false')});
-  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');a.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
+  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks');
+  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
 })();
 </script>
 </body>

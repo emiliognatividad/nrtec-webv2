@@ -292,40 +292,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features-section sp" id="caracteristicas" aria-labelledby="feat-title">
-  <div class="container">
-    <h2 id="feat-title" class="section-title">Lo que lo hace diferente</h2>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-card-num">01</div>
-        <div class="feat-card-title">Monitoreo en tiempo real</div>
-        <div class="feat-card-desc">Rastreo GPS y ubicación en tiempo real de todas las unidades de la flota.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">02</div>
-        <div class="feat-card-title">Recaudo de tarifas</div>
-        <div class="feat-card-desc">Monitoreo del recaudo y seguimiento de pagos en toda la operación.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">03</div>
-        <div class="feat-card-title">Logística</div>
-        <div class="feat-card-desc">Planeación y optimización de rutas para toda la flota.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">04</div>
-        <div class="feat-card-title">Operaciones</div>
-        <div class="feat-card-desc">Despacho y asignación de conductores desde un solo lugar.</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-card-num">05</div>
-        <div class="feat-card-title">Reportes de transporte</div>
-        <div class="feat-card-desc">Analítica de Big Data aplicada a todo el ecosistema de transporte.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- RELATED -->
 <section class="related-section sp" aria-labelledby="rel-title">
   <div class="container">
@@ -423,9 +389,9 @@ img{display:block}
   var nav=document.getElementById('navbar');
   function s(){nav.classList.toggle('scrolled',window.scrollY>20)}
   window.addEventListener('scroll',s,{passive:true});s();
-  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks'),a=document.getElementById('navActions');
-  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');a.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false')});
-  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');a.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
+  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks');
+  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
 })();
 </script>
 </body>

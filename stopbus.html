@@ -448,9 +448,9 @@ img{display:block}
   var nav=document.getElementById('navbar');
   function s(){nav.classList.toggle('scrolled',window.scrollY>20)}
   window.addEventListener('scroll',s,{passive:true});s();
-  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks'),a=document.getElementById('navActions');
-  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');a.classList.toggle('open',o);t.setAttribute('aria-expanded',o?'true':'false')});
-  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');a.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
+  var t=document.getElementById('menuToggle'),l=document.getElementById('navLinks');
+  if(t){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});
+  l.querySelectorAll('a').forEach(function(x){x.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})})}
 })();
 </script>
 </body>
