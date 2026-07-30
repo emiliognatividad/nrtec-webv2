@@ -654,6 +654,9 @@ h1, h2, h3, h4 {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
 }
 @media (max-width: 900px) {
   .prod-grid { grid-template-columns: repeat(2, 1fr); }
@@ -689,6 +692,7 @@ h1, h2, h3, h4 {
   .prod-grid.is-carousel .prod-card-visual { height: 190px; }
   .prod-grid.is-carousel .prod-desc {
     display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+    overflow-wrap: break-word; word-break: normal; hyphens: none;
   }
   .prod-car-arrow {
     display: flex; flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
@@ -794,8 +798,11 @@ h1, h2, h3, h4 {
   font-size: 19px;
   font-weight: 600;
   color: var(--txt-1);
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
 }
-.prod-desc { font-size: 15px; color: var(--txt-2); line-height: 1.65; flex: 1; }
+.prod-desc { font-size: 15px; color: var(--txt-2); line-height: 1.65; flex: 1; overflow-wrap: break-word; word-break: normal; hyphens: none; }
 .prod-link {
   display: flex;
   align-items: center;
