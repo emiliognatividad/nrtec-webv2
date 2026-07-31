@@ -6,10 +6,9 @@
 <title>Nosotros, NRTEC | Tecnología mexicana para el transporte público</title>
 <meta name="description" content="Conoce la historia, misión y equipo de NRTEC Desarrollos Tecnológicos: tecnología para el transporte público de México.">
 <style>
-/* ─── RESET ────────────────────────────── */
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-/* ─── TOKENS ───────────────────────────── */
 :root{
   --blue:      #1054B8;
   --blue-lt:   #1A6FE8;
@@ -49,7 +48,6 @@ h1,h2,h3,h4{
 a{text-decoration:none}
 img{display:block}
 
-/* ─── EYEBROW ──────────────────────────── */
 .eyebrow{
   display:inline-flex;align-items:center;gap:8px;
   font-size:12px;font-weight:600;letter-spacing:2px;
@@ -57,7 +55,6 @@ img{display:block}
 }
 .eyebrow::before{content:'';width:20px;height:1.5px;background:var(--blue);flex-shrink:0}
 
-/* ─── BUTTONS ──────────────────────────── */
 .btn{
   display:inline-flex;align-items:center;gap:8px;
   padding:12px 24px;border-radius:var(--r-md);
@@ -70,9 +67,6 @@ img{display:block}
 .btn-ghost{background:transparent;color:var(--gray-500);border:1.5px solid var(--gray-200)}
 .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
 
-/* ════════════════════════════════════════
-   NAV
-════════════════════════════════════════ */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
   height:80px;display:flex;align-items:center;
@@ -104,9 +98,6 @@ img{display:block}
   .nav{height:auto;padding:14px 0}
 }
 
-/* ════════════════════════════════════════
-   HERO, línea de tiempo horizontal
-════════════════════════════════════════ */
 .hero-nos{
   background:linear-gradient(150deg,var(--blue) 0%,var(--blue-lt) 100%);
   padding:140px 0 100px;
@@ -136,10 +127,6 @@ img{display:block}
 .hero-nos h1 em{font-style:normal;color:rgba(255,255,255,0.65)}
 .hero-nos-sub{font-size:18px;color:rgba(255,255,255,0.80);line-height:1.75;max-width:500px}
 
-
-/* ════════════════════════════════════════
-   HISTORIA, timeline
-════════════════════════════════════════ */
 .historia{background:#fff;padding:clamp(72px,8vw,112px) 0;border-top:1px solid var(--gray-200)}
 .historia-header{
   display:grid;grid-template-columns:1fr 1fr;
@@ -149,7 +136,6 @@ img{display:block}
 .section-title{font-size:clamp(28px,3.5vw,42px);color:var(--ink);margin-bottom:12px}
 .section-desc{font-size:17px;color:var(--gray-500);line-height:1.75}
 
-/* ── MAPA DE COBERTURA ─────────────────────────────────────── */
 .cov-wrap{
   display:grid;
   grid-template-columns:minmax(0,1.45fr) minmax(340px,0.85fr);
@@ -226,15 +212,9 @@ img{display:block}
   .cov-card{padding:20px 20px}
 }
 
-
-
-/* ════════════════════════════════════════
-   ECOSISTEMA — CHIP GRID
-════════════════════════════════════════ */
 .porq{background:var(--gray-50);padding:96px 0;border-top:1px solid var(--gray-100);border-bottom:1px solid var(--gray-100)}
 .porq-head{text-align:center;max-width:560px;margin:0 auto 52px}
 
-/* Chip grid */
 .eco-grid{
   display:flex;flex-wrap:wrap;gap:12px;
   justify-content:center;max-width:720px;margin:0 auto;
@@ -262,9 +242,6 @@ img{display:block}
   transition:color .25s;
 }
 
-/* ════════════════════════════════════════
-   EQUIPO
-════════════════════════════════════════ */
 .equipo{
   background:var(--gray-50);
   border-top:1px solid var(--gray-200);
@@ -293,9 +270,6 @@ img{display:block}
 .eq-role{font-size:13px;color:var(--blue);font-weight:600;margin-top:2px}
 .eq-bio{font-size:13px;color:var(--gray-500);line-height:1.65}
 
-/* ════════════════════════════════════════
-   CERTIFICACIONES
-════════════════════════════════════════ */
 .certs{
   background:#fff;
   border-top:1px solid var(--gray-200);
@@ -316,9 +290,6 @@ img{display:block}
 }
 .cert-item svg{width:20px;height:20px;color:var(--blue);flex-shrink:0}
 
-/* ════════════════════════════════════════
-   CTA BAND
-════════════════════════════════════════ */
 .cta-band-nos{
   background:var(--navy);padding:72px 0;
   position:relative;overflow:hidden;
@@ -342,9 +313,6 @@ img{display:block}
 .cta-band-nos p{font-size:16px;color:rgba(255,255,255,0.70)}
 .cta-band-nos-btns{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
 
-/* ════════════════════════════════════════
-   FOOTER
-════════════════════════════════════════ */
 .site-footer{background:var(--navy-dark);padding:64px 0 0}
 .footer-grid{
   display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;
@@ -388,14 +356,12 @@ img{display:block}
 .footer-bottom-links a{font-size:12px;color:rgba(255,255,255,0.28);transition:color 150ms}
 .footer-bottom-links a:hover{color:rgba(255,255,255,0.65)}
 
-/* Motion */
 :focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 
-<!-- ══════════════════════════ NAV ══════════════════════════ -->
 <nav class="nav" id="navbar" aria-label="Navegación">
   <div class="container">
     <div class="nav-inner">
@@ -405,7 +371,7 @@ img{display:block}
       <ul class="nav-links" id="navLinks" role="list">
         <li><a href="nrtec.html#soluciones"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>Productos</a></li>
         <li><a href="prepago.html"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></span>Prepago Integral</a></li>
-        <li><a href="nosotros.html" class="active"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v18"/><path d="M2 22h20"/><path d="M9 8h1"/><path d="M14 8h1"/><path d="M9 12h1"/><path d="M14 12h1"/><path d="M9 16h1"/><path d="M14 16h1"/></svg></span>Nosotros</a></li>
+        <li><a href="nosotros.html" class="active"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v18"/><path d="M2 22h20"/><path d="M9 8h1"/><path d="M14 8h1"/><path d="M9 12h1"/><path d="M14 12h1"/><path d="M9 16h1"/><path d="M14 16h1"/></svg></span>Proyectos</a></li>
         <li><a href="nrtec.html#contacto"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>Contacto</a></li>
         <li><a href="https://wa.me/5214441650909" target="_blank" rel="noopener"><span class="nav-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>WhatsApp</a></li>
       </ul>
@@ -418,7 +384,6 @@ img{display:block}
   </div>
 </nav>
 
-<!-- ══════════════════════════ HERO ══════════════════════════ -->
 <section class="hero-nos" aria-labelledby="nos-title">
   <div class="grid-overlay" aria-hidden="true"></div>
   <div class="container">
@@ -438,7 +403,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- ══════════════════════════ HISTORIA ══════════════════════════ -->
 <section class="historia" id="historia" aria-labelledby="hist-title">
   <div class="container">
     <div class="historia-header">
@@ -721,11 +685,6 @@ img{display:block}
         <div class="cov-card active" data-card="slp">
           <div class="cov-card-city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>San Luis Potosí</div>
           <div class="cov-milestone">
-            <div class="cov-m-year">1999 · Fundación</div>
-            <div class="cov-m-title">Nace NRTEC en San Luis Potosí</div>
-            <div class="cov-m-desc">Un equipo de ingenieros potosinos decide atacar la informalidad tarifaria del transporte urbano. Primer validador instalado en 12 unidades piloto.</div>
-          </div>
-          <div class="cov-milestone">
             <div class="cov-m-year">2007 · Primera gran red</div>
             <div class="cov-m-title">Sistema Integral metropolitano de SLP</div>
             <div class="cov-m-desc">Integración de una plataforma de gestión de flota y equipando 1,200 camiones urbanos con Validador y Barras Contadoras.</div>
@@ -737,7 +696,7 @@ img{display:block}
           <div class="cov-milestone">
             <div class="cov-m-year">2010 · Expansión noreste</div>
             <div class="cov-m-title">Monterrey, N.L.</div>
-            <div class="cov-m-desc">Primer sistema de validación y control operacional fuera del centro del país. Un proyecto de referencia ya concluido que incorporó a mas de 4,200 camiones y demostró la importancia de la escalabilidad y el soporte a largo plazo.</div>
+            <div class="cov-m-desc">Sistema de validación y control operacional fuera del centro del país. Un proyecto de referencia ya concluido que incorporó a mas de 5,000 camiones y demostró la importancia de la escalabilidad y el soporte a largo plazo.</div>
           </div>
         </div>
 
@@ -760,16 +719,16 @@ img{display:block}
         </div>
 
         <div class="cov-card" data-card="bajio">
-          <div class="cov-card-city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Celaya · León · Irapuato · Aguascalientes</div>
+          <div class="cov-card-city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Región Bajío</div>
           <div class="cov-milestone">
             <div class="cov-m-year">2015 – 2022 · Consolidación</div>
             <div class="cov-m-title">Celaya, León, Irapuato, Aguascalientes</div>
-            <div class="cov-m-desc">Cuatro ciudades del Bajio en 7 años, más de 3,270 camiones equipados y gestionados en nuestra Plataforma Tecnológica.</div>
+            <div class="cov-m-desc">Cuatro ciudades del Bajio en más de 15 años, más de 3,270 camiones equipados y gestionados en nuestra Plataforma Tecnológica.</div>
           </div>
         </div>
 
         <div class="cov-card" data-card="bc">
-          <div class="cov-card-city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tijuana · Ensenada · Tecate · La Paz</div>
+          <div class="cov-card-city"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Península de Baja California</div>
           <div class="cov-milestone">
             <div class="cov-m-year">2024 – 2025 · Baja California</div>
             <div class="cov-m-title">Tijuana, Ensenada, Tecate, La Paz</div>
@@ -783,7 +742,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- ══════════════════════════ POR QUÉ NRTEC ══════════════════════════ -->
 <section class="porq" id="diferenciadores" aria-labelledby="porq-title">
   <div class="container">
 
@@ -844,9 +802,6 @@ img{display:block}
   </div>
 </section>
 
-
-
-<!-- ══════════════════════════ CTA ══════════════════════════ -->
 <section class="cta-band-nos" aria-label="Llamada a la acción">
   <div class="grid-overlay" aria-hidden="true"></div>
   <div class="container">
@@ -868,7 +823,6 @@ img{display:block}
   </div>
 </section>
 
-<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
 <footer class="site-footer" aria-label="Pie de página NRTEC">
   <div class="container">
     <div class="footer-grid">
@@ -958,7 +912,7 @@ img{display:block}
     });
   }
 
-  /* ── Mapa de cobertura: puntos interactivos ── */
+
   (function(){
     var dots  = Array.from(document.querySelectorAll('.map-dot'));
     var cards = Array.from(document.querySelectorAll('.cov-card'));
